@@ -20,44 +20,54 @@
         <span class="game-icon">🎮</span>
         <button id="add-game-button">Add Game</button>
       </div>
-      <form id="add-game-form" class="hidden">
-        <h2>Add New Game</h2>
+      
+<form id="add-game-form" class="hidden">
+    <h2>Add New Game</h2>
 
+    <div class="form-field">
         <label for="game-name">Game Name</label>
-        <input type="text" id="game-name" required />
+        <input type="text" id="game-name" required>
+    </div>
 
-        <label for="game-genre">Genre</label>
-        <input type="text" id="game-genre" required />
+    <div class="form-row">
+        <div class="form-field">
+            <label for="game-genre">Genre</label>
+            <input type="text" id="game-genre" required>
+        </div>
 
-        <label for="game-year">Release Year</label>
-        <input type="number" id="game-year" required />
+        <div class="form-field">
+            <label for="game-year">Release Year</label>
+            <input type="number" id="game-year" required>
+        </div>
+    </div>
 
-        <label for="game-rating">Rating</label>
-        <input
-          type="number"
-          id="game-rating"
-          min="1"
-          max="10"
-          step="0.1"
-          required
-        />
+    <div class="form-row">
+        <div class="form-field">
+            <label for="game-rating">Rating</label>
+            <input type="number" id="game-rating"
+                   min="1" max="10" step="0.1" required>
+        </div>
 
-        <label for="game-status">Status</label>
-        <select id="game-status">
-          <option value="Want to Play">Want to Play</option>
-          <option value="Playing">Playing</option>
-          <option value="Completed">Completed</option>
-        </select>
+        <div class="form-field">
+            <label for="game-status">Status</label>
+            <select id="game-status">
+                <option value="Want to Play">Want to Play</option>
+                <option value="Playing">Playing</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </div>
+    </div>
 
-        <label>
-          <input type="checkbox" id="game-favorite" />
-          Favorite
-        </label>
+    <label class="favorite-field">
+        <input type="checkbox" id="game-favorite">
+        Add to Favorites
+    </label>
 
-        <button type="submit">Save Game</button>
+    <div class="form-actions">
         <button type="button" id="cancel-add-game">Cancel</button>
-
-      </form>
+        <button type="submit">Save Game</button>
+    </div>
+</form>
 
       <div class="game-stats">
         <div class="games-total">
