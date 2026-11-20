@@ -8,7 +8,7 @@ let games = [
         releaseYear: 2026,
         status: "Completed",
         favorite: true,
-        Image:"images/GuessingGame.jpeg"
+        Image:"images/GuessingGame.png"
     },
     {
         id: 2,
