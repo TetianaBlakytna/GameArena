@@ -198,3 +198,29 @@ body {
     display: block;
     margin-top: 16px;
 }
+
+#game-image {
+    width: 100%;
+    box-sizing: border-box;
+    background: #140922;
+    color: #d9c5ef;
+    border: 1px dashed #78549a;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#game-image::file-selector-button {
+    background: #9f65f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-right: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#game-image::file-selector-button:hover {
+    background: #b57aff;
+}
