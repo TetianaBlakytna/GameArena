@@ -8,7 +8,7 @@ let games = [
         releaseYear: 2026,
         status: "Completed",
         favorite: true,
-        Image:"images/pokemon.png"
+        Image:"images/GuessingGame.jpeg"
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ let games = [
                 releaseYear: 2026,
         status: "Completed",
         favorite: true,
-        Image:"images/pokemon.png"
+        Image:"images/Bulbasaur.jpeg"
     }
 ];
 
