@@ -1,0 +1,58 @@
+body {
+    background-color: #15012d;
+    color: #dcedfe;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.content {
+    padding: 32px;
+}
+
+.game-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+}
+.game-stats div {
+    background-color: #281442;
+        padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-game-container {
+    margin-top: 32px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #281442;
+        align-items: center;
+    gap: 15px;
+}
+.game-stats h2 {
+    color: #f7f3d4;
+}
+
+.game-stats p {
+    color: #dcedfe;
+    text-transform: uppercase;
+}
+
+#game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+}
+
+.game-card {
+    background-color: #281442;
+    padding: 20px;
+    border-radius: 8px;
+}
+.hidden {
+    display: none;
+}

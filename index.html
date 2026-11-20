@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Game Arena - Play the Best Games</title>
+    <script src="scripts/games.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/addGame.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Welcome to Game Arena!</h2>
+      <p>
+        Discover and play the best games online. From action-packed adventures
+        to relaxing puzzles, we have something for everyone.
+      </p>
+      <div class="add-game-container">
+        <img
+          src="images/game-icon.png"
+          alt="Game Icon"
+          class="game-arena-logo"
+        />
+        <img
+          src="images/add-game-icon.png"
+          alt="Add Game Icon"
+          class="add-game-icon"
+        />
+        <button id="add-game-button">Add Game</button>
+      </div>
+      <form id="add-game-form" class="hidden">
+        <h2>Add New Game</h2>
+
+        <label for="game-name">Game Name</label>
+        <input type="text" id="game-name" required />
+
+        <label for="game-genre">Genre</label>
+        <input type="text" id="game-genre" required />
+
+        <label for="game-year">Release Year</label>
+        <input type="number" id="game-year" required />
+
+        <label for="game-rating">Rating</label>
+        <input
+          type="number"
+          id="game-rating"
+          min="1"
+          max="10"
+          step="0.1"
+          required
+        />
+
+        <label for="game-status">Status</label>
+        <select id="game-status">
+          <option value="Want to Play">Want to Play</option>
+          <option value="Playing">Playing</option>
+          <option value="Completed">Completed</option>
+        </select>
+
+        <label>
+          <input type="checkbox" id="game-favorite" />
+          Favorite
+        </label>
+
+        <button type="submit">Save Game</button>
+        <button type="button" id="cancel-add-game">Cancel</button>
+
+      </form>
+
+      <div class="game-stats">
+        <div class="games-total">
+          <h2 id="games-total">0</h2>
+          <p>Total</p>
+        </div>
+        <div class="completed-games">
+          <h2 id="completed-games">0</h2>
+          <p>Completed</p>
+        </div>
+        <div class="currently-played">
+          <h2 id="currently-played">0</h2>
+          <p>Currently playing</p>
+        </div>
+        <div class="favorite-games">
+          <h2 id="favorite-games">0</h2>
+          <p>Favorite</p>
+        </div>
+        <div class="average-rating">
+          <h2 id="average-rating">0</h2>
+          <p>Average rating</p>
+        </div>
+      </div>
+      <div class="game-list">
+        <h3>Game List</h3>
+        <ul id="game-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
