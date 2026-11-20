@@ -1,5 +1,8 @@
 const gameList = document.getElementById("game-list");
 
+function displayGames() {
+    gameList.innerHTML = "";
+
 games.forEach(function(game) {
     console.log(game.name);
     const gameItem = document.createElement("div");
@@ -18,7 +21,7 @@ games.forEach(function(game) {
     `;
     gameList.appendChild(gameItem);
 });
-
+}
 
 function updateStats() {
     // Total games
@@ -48,4 +51,5 @@ function updateStats() {
     document.getElementById("favorite-games").textContent = favoriteGames;
     document.getElementById("average-rating").textContent = averageRating;
 }
+displayGames();
 updateStats();

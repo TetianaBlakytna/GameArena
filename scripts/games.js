@@ -22,3 +22,11 @@ let games = [
         Image:"images/pokemon.png"
     }
 ];
+
+// add new games 
+
+const saveGame = localStorage.getItem("games");
+
+if (saveGame != null){
+    games = JSON.parse(saveGame);
+}

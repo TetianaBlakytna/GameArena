@@ -41,7 +41,9 @@ const newGame = {
     Image: "" // add image
 }
 games.push(newGame);
-console.log(games);
+localStorage.setItem("games", JSON.stringify(games)); // save new game to local storage
+displayGames();
+updateStats();
 addGameForm.reset();
 addGameForm.classList.add("hidden");
 });
