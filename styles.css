@@ -56,3 +56,98 @@ body {
 .hidden {
     display: none;
 }
+
+
+/* Add Game Form */
+
+#add-game-form {
+    background: #241338;
+    border: 1px solid #49305f;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 24px 0;
+    max-width: 850px;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#add-game-form h2 {
+    color: #f3eaff;
+    margin-bottom: 12px;
+}
+
+#add-game-form label {
+    color: #e6d8f6;
+    font-weight: 500;
+}
+
+#add-game-form input,
+#add-game-form select {
+    background: #140922;
+    color: #ffffff;
+    border: 1px solid #584070;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+#add-game-form input:focus,
+#add-game-form select:focus {
+    outline: none;
+    border-color: #b57aff;
+    box-shadow: 0 0 0 3px rgba(181, 122, 255, 0.15);
+}
+
+#add-game-form button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#add-game-form button[type="submit"] {
+    background: #9f65f2;
+    color: white;
+}
+
+#add-game-form button[type="submit"]:hover {
+    background: #b57aff;
+}
+
+#cancel-add-game {
+    background: #39264f;
+    color: #e6d8f6;
+}
+
+#cancel-add-game:hover {
+    background: #503568;
+}
+
+/* Keep the form hidden until Add Game is clicked */
+#add-game-form.hidden {
+    display: none;
+}
+
+.game-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+#add-game-button {
+    background-color: #9f65f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+#add-game-button:hover {
+    background-color: #b57aff;
+}
